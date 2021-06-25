@@ -38,11 +38,11 @@ public class MovieDetailsActivity extends AppCompatActivity {
         tvTitle.setText(movie.getTitle());
         tvOverview.setText(movie.getOverview());
         String imageUrl = movie.getPosterPath();
-//        Glide
-//                .with(context)
-//                .load(imageUrl)
-//                .placeholder(R.drawable.flicks_movie_placeholder)
-//                .into(ivPoster);
+        Glide
+                .with(this)
+                .load(imageUrl)
+                .placeholder(R.drawable.flicks_movie_placeholder)
+                .into(ivPoster);
 
         float voteAverage = movie.getVoteAverage().floatValue();
         rbVoteAverage.setRating(voteAverage / 2.0f);

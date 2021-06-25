@@ -23,6 +23,8 @@ import org.parceler.Parcels;
 
 import java.util.List;
 
+import jp.wasabeef.glide.transformations.RoundedCornersTransformation;
+
 public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> {
 
     Context context;
@@ -78,6 +80,8 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
                 Glide
                         .with(context)
                         .load(imageUrl)
+                        .fitCenter()
+                        .transform(new RoundedCornersTransformation(30, 10))
                         .placeholder(R.drawable.flicks_backdrop_placeholder)
                         .into(ivPoster);
             } else {
@@ -85,6 +89,9 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
                 Glide
                         .with(context)
                         .load(imageUrl)
+                        .fitCenter()
+                        .circleCrop() // scale image to fill the entire ImageView
+                        .transform(new RoundedCornersTransformation(30, 10))
                         .placeholder(R.drawable.flicks_movie_placeholder)
                         .into(ivPoster);
             }

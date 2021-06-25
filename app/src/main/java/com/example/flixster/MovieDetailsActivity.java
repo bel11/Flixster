@@ -13,6 +13,8 @@ import com.example.flixster.models.Movie;
 
 import org.parceler.Parcels;
 
+import jp.wasabeef.glide.transformations.RoundedCornersTransformation;
+
 public class MovieDetailsActivity extends AppCompatActivity {
 
     Movie movie;
@@ -41,6 +43,8 @@ public class MovieDetailsActivity extends AppCompatActivity {
         Glide
                 .with(this)
                 .load(imageUrl)
+                .circleCrop() // scale image to fill the entire ImageView
+                .transform(new RoundedCornersTransformation(30, 10))
                 .placeholder(R.drawable.flicks_movie_placeholder)
                 .into(ivPoster);
 

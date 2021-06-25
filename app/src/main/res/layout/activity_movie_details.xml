@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MovieDetailsActivity">
+    <ImageView
+        android:id="@+id/ivPoster"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/ivPoster"
+        android:textSize="24sp"
+        tools:text="A Quiet Place Part II" />
+
+    <TextView
+        android:id="@+id/tvOverview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="0dp"
+        android:layout_toEndOf="@+id/ivPoster"
+        android:layout_below="@+id/rbVoteAverage"
+        tools:text="Following the events at home, the Abbott family now face the terrors of the outside world. Forced to venture into the unknown, they realize that the creatures that hunt by sound are not the only threats that lurk beyond the sand path." />
+
+    <RatingBar
+        android:id="@+id/rbVoteAverage"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitle"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="191dp"
+        android:layout_toEndOf="@+id/ivPoster"
+        android:numStars="5"
+        android:stepSize=".5" />
+
+
+    <!--    <TextView-->
+<!--        android:id="@+id/tvTitle"-->
+<!--        android:layout_width="265dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentLeft="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_marginStart="0dp"-->
+<!--        android:layout_marginLeft="0dp"-->
+<!--        android:layout_marginTop="0dp"-->
+<!--        android:layout_marginEnd="146dp"-->
+<!--        android:layout_marginRight="146dp"-->
+<!--        android:text="Movie Title"-->
+<!--        android:textAppearance="@android:style/TextAppearance.Large" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvOverview"-->
+<!--        android:layout_width="264dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/rbVoteAverage"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentLeft="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_marginStart="0dp"-->
+<!--        android:layout_marginLeft="126dp"-->
+<!--        android:layout_marginTop="0dp"-->
+<!--        android:layout_marginEnd="147dp"-->
+<!--        android:layout_marginRight="147dp"-->
+<!--        android:text="TextView" />-->
+
+<!--    <RatingBar-->
+<!--        android:id="@+id/rbVoteAverage"-->
+<!--        style="@style/Widget.AppCompat.RatingBar.Small"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/tvTitle"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentLeft="true"-->
+<!--        android:layout_marginStart="0dp"-->
+<!--        android:layout_marginLeft="126dp"-->
+<!--        android:layout_marginTop="0dp"-->
+<!--        android:numStars="5"-->
+<!--        android:stepSize="0.5" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/ivPoster"-->
+<!--        android:layout_width="120dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_marginStart="291dp"-->
+<!--        android:layout_marginTop="0dp"-->
+<!--        android:layout_marginEnd="0dp"-->
+<!--        tools:srcCompat="@tools:sample/avatars" />-->
+
+
+
+
+    <!--    <TextView-->
+<!--        android:id="@+id/tvTitle"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_marginStart="65dp"-->
+<!--        android:layout_marginTop="158dp"-->
+<!--        android:textAppearance="@style/TextAppearance.AppCompat.Large"-->
+<!--        tools:text="Movie Title" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvOverview"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/tvTitle"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_marginTop="127dp"-->
+<!--        android:layout_marginEnd="269dp"-->
+<!--        android:text="TextView" />-->
+
+
+</RelativeLayout>

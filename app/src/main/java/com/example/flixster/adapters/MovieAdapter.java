@@ -89,8 +89,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
                 Glide
                         .with(context)
                         .load(imageUrl)
-                        .fitCenter()
-                        .circleCrop() // scale image to fill the entire ImageView
+                        .circleCrop()
                         .transform(new RoundedCornersTransformation(30, 10))
                         .placeholder(R.drawable.flicks_movie_placeholder)
                         .into(ivPoster);
